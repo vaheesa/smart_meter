@@ -1,0 +1,18 @@
+
+<div class="list-group users-list">
+  <div *ngFor="let item of items" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="row">
+      
+      <div class="col col-md-8 text-col">
+        <h5 class="mb-1">Name: {{item.payload.doc.data().name}} </h5>
+         
+        <small> Email:{{item.payload.doc.data().mail}}</small>
+
+      </div>
+      Date: {{item.payload.doc.data().date}} <br>
+      Billing Cycle: {{item.payload.doc.data().cycle}} <br>
+      No of Units Consumed: {{item.payload.doc.data().units}} <br>
+      Total Bill: {{item.payload.doc.data().bill}}
+    </div>
+  </div>
+</div>
